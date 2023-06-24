@@ -1,27 +1,22 @@
 package Resources.Figures_2D;
 
 import Resources.Figuras;
-import Resources.Points;
 
 public class Cuadrado extends Figuras{
 
-    double l1;
-    double l2;
-    double l3;
-    double l4;
+    public double l1;
+    public double l2;
+    public double l3;
+    public double l4;
     
     @Override
     public double figuraPerimetro() {
-        Points punto1 = listaPuntos.get(0);
-        Points punto2 = listaPuntos.get(1);
-        Points punto3 = listaPuntos.get(2);
-        Points punto4 = listaPuntos.get(3);
         double perimetro;
 
-        l1 = obtenerDistancias(punto1, punto2);
-        l2 = obtenerDistancias(punto2, punto4);
-        l3 = obtenerDistancias(punto3, punto4);
-        l4 = obtenerDistancias(punto1, punto3);
+        l1 = obtenerDistancias(0, 1);
+        l2 = obtenerDistancias(1, 3);
+        l3 = obtenerDistancias(2, 3);
+        l4 = obtenerDistancias(0, 2);
 
         perimetro = l1 + l2 + l3 + l4;
 
