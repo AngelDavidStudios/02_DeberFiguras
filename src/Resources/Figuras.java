@@ -36,6 +36,5 @@ public abstract class Figuras {
             double z = sc.nextDouble();
             listaPuntos.add(new Points(x, y, z));
         }
-        sc.close();
     }
 }

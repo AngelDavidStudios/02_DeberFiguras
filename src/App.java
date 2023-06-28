@@ -30,6 +30,9 @@ public class App {
 
                     System.out.println("El perimetro es: " + perimetro);
                     System.out.println("El area es: " + area);
+
+                    System.out.println("Presione cualquier tecla para regresar al menú principal...");
+                    scanner.nextLine(); 
                     
                     break;
 
@@ -40,16 +43,22 @@ public class App {
 
                     System.out.println("El perimetro es: " + perimetro2);
                     System.out.println("El area es: " + area2);
+
+                    System.out.println("Presione cualquier tecla para regresar al menú principal...");
+                    scanner.nextLine(); 
                     
                     break;
 
                 case "c":
-                    circulo.ingresarPuntos(1);
+                    circulo.ingresarPuntos(2);
                     double perimetro3 = circulo.figuraPerimetro();
                     double area3 = circulo.figuraArea();
 
                     System.out.println("El perimetro es: " + perimetro3);
                     System.out.println("El area es: " + area3);
+
+                    System.out.println("Presione cualquier tecla para regresar al menú principal...");
+                    scanner.nextLine(); 
                     
                     break;
                 
@@ -64,6 +73,9 @@ public class App {
 
                         System.out.println("El volumen del cubo es: " + volumencube);
                         System.out.println("La superficie del cubo es: " + superficie);
+
+                        System.out.println("Presione cualquier tecla para regresar al menú principal...");
+                        scanner.nextLine(); 
 
                     } else {
                         System.out.println("No es un cubo, intentelo nuevamente");
@@ -86,6 +98,7 @@ public class App {
                     double areaLateralRight = piramid.areaCaras(ladoC, ladoD, ladoF);
                     double areaFront = piramid.areaCaras(ladoA, ladoE, ladoD);
 
+                    piramid.baricentro();
                     double areaBase = piramid.figuraArea();
                     double altura = piramid.alturaPiramide();
 
@@ -94,18 +107,24 @@ public class App {
 
                     System.out.println("El volumen de la piramide es: " + volumenPiramid);
                     System.out.println("La superficie de la piramide es: " + superPiramid);
+
+                    System.out.println("Presione cualquier tecla para regresar al menú principal...");
+                    scanner.nextLine(); 
                     
                     break;
 
                 case "f":
                     Esfera sphere = new Esfera();
-                    sphere.ingresarPuntos(1);
+                    sphere.ingresarPuntos(2);
                     sphere.figuraPerimetro();
                     double superficie = sphere.superficiesfera();
                     double volumensphere = sphere.volumenEsfera();
 
                     System.out.println("La superficie de la esfera es: " + superficie);
                     System.out.println("El volumen de la esfera es: " + volumensphere);
+
+                    System.out.println("Presione cualquier tecla para regresar al menú principal...");
+                    scanner.nextLine(); 
                     
                     break;
 
