@@ -1,8 +1,9 @@
 package Resources.Figures_3D;
 
+import Resources.Interfaz3D;
 import Resources.Figures_2D.Cuadrado;
 
-public class Cubo extends Cuadrado {
+public class Cubo extends Cuadrado implements Interfaz3D {
 
     public Cubo(String nombre) {
     super(nombre);
@@ -17,7 +18,8 @@ public class Cubo extends Cuadrado {
         }
     }
 
-    public double cuboVolumen() {
+    @Override
+    public double volumen3D() {
         
         double volumen;
         
@@ -27,8 +29,8 @@ public class Cubo extends Cuadrado {
 
         return volumen;
     }
-
-    public double cuboArea() {
+    @Override
+    public double superficies3D() {
         
         double area;
 
@@ -37,6 +39,9 @@ public class Cubo extends Cuadrado {
         area = 6 * Math.pow(d1, 2);
 
         return area;
-
+    }
+    @Override
+    public String getNombre3D() {
+        return getNombre();
     }
 }

@@ -6,14 +6,8 @@ public class Circulo extends Figuras {
 
     public double radio;
 
-    private String name;
-
     public Circulo(String nombre) {
         this.name = nombre;
-    }
-
-    public String getNombre() {
-    return name;
     }
     
     @Override

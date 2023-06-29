@@ -1,14 +1,15 @@
 package Resources.Figures_3D;
 
+import Resources.Interfaz3D;
 import Resources.Points;
 import Resources.Figures_2D.Triangulo;
 
-public class Piramide extends Triangulo {
+public class Piramide extends Triangulo implements Interfaz3D{
 
     Points baricentroG;
 
     public Piramide(String nombre) {
-    super(nombre);
+        super(nombre);
     }
     
     public void baricentro() {
@@ -49,18 +50,26 @@ public class Piramide extends Triangulo {
         return altura;
     }
 
-    public double volumenPiramide(double areaBase, double altura) {
+    public double superficies3D(){
+        double areaBase = figuraArea();
+        double areaLateralLeft = areaLateralLeft();
+        double areaLateralRight = areaLateralRight();
+        double areaFront = areaFront();
 
+        double areaS = (areaBase + areaLateralLeft + areaLateralRight + areaFront);
+
+        return areaS;
+    }
+
+    public double volumen3D() {
+        double areaBase = figuraArea();
+        double altura = alturaPiramide();
         double volumenPiramide = (areaBase * altura) / 3;
 
         return volumenPiramide;
     }
 
-    public double areaSuperficial( double areaTriangulo, double areaCara2, double areaCara3, double areaCara4) {
-
-        double areaS = (areaTriangulo + areaCara2 + areaCara3 + areaCara4);
-
-        return areaS;
-
+    public String getNombre3D() {
+        return getNombre();
     }
 }

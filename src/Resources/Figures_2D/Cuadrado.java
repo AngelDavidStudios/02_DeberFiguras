@@ -9,14 +9,8 @@ public class Cuadrado extends Figuras{
     public double l3;
     public double l4;
 
-    private String name;
-
     public Cuadrado(String nombre) {
         this.name = nombre;
-    }
-
-    public String getNombre() {
-    return name;
     }
     
     @Override

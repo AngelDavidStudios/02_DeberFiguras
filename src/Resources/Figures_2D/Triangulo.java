@@ -8,15 +8,14 @@ public class Triangulo extends Figuras {
     public double ladoB;
     public double ladoC;
 
-    private String name;
+    public double ladoD;
+    public double ladoE;
+    public double ladoF;
 
     public Triangulo(String nombre) {
         this.name = nombre;
     }
 
-    public String getNombre() {
-    return name;
-    }
     
     @Override
     public double figuraPerimetro() {
@@ -41,6 +40,38 @@ public class Triangulo extends Figuras {
         area = Math.sqrt(s*(s-ladoA) * (s-ladoB) * (s-ladoC));
 
         return area;
+    }
 
+    public double areaLateralLeft() {
+        double s;
+        double area;
+
+        s = figuraPerimetro()/2;
+
+        area = Math.sqrt(s*(s-ladoB) * (s-ladoE) * (s-ladoF));
+
+        return area;
+    }
+
+    public double areaLateralRight() {
+        double s;
+        double area;
+
+        s = figuraPerimetro()/2;
+
+        area = Math.sqrt(s*(s-ladoC) * (s-ladoD) * (s-ladoF));
+
+        return area;
+    }
+
+    public double areaFront() {
+        double s;
+        double area;
+
+        s = figuraPerimetro()/2;
+
+        area = Math.sqrt(s*(s-ladoA) * (s-ladoE) * (s-ladoD));
+
+        return area;
     }
 }

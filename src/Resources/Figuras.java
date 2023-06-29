@@ -6,13 +6,17 @@ import java.util.Scanner;
 
 public abstract class Figuras {
 
+    public String name;
+
     public List<Points> listaPuntos = new ArrayList<>();
 
     public abstract double figuraPerimetro();
     
     public abstract double figuraArea();
 
-    public abstract String getNombre();
+    public String getNombre() {
+        return name;
+    }
     
     public double obtenerDistancias(int indice1, int indice2) {
         Points punto1 = listaPuntos.get(indice1);
