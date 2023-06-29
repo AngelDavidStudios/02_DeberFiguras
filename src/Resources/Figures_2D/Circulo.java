@@ -5,6 +5,16 @@ import Resources.Figuras;
 public class Circulo extends Figuras {
 
     public double radio;
+
+    private String name;
+
+    public Circulo(String nombre) {
+        this.name = nombre;
+    }
+
+    public String getNombre() {
+    return name;
+    }
     
     @Override
     public double figuraPerimetro() {
@@ -12,7 +22,7 @@ public class Circulo extends Figuras {
 
         radio = obtenerDistancias(0, 1);
 
-        perimetro = Math.PI * Math.pow(radio, 2);
+        perimetro = 2 * Math.PI * radio;
 
         return perimetro;
     }

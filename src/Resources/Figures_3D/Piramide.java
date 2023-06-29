@@ -6,6 +6,10 @@ import Resources.Figures_2D.Triangulo;
 public class Piramide extends Triangulo {
 
     Points baricentroG;
+
+    public Piramide(String nombre) {
+    super(nombre);
+    }
     
     public void baricentro() {
 

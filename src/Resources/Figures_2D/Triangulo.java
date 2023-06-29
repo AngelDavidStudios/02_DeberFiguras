@@ -7,6 +7,16 @@ public class Triangulo extends Figuras {
     public double ladoA;
     public double ladoB;
     public double ladoC;
+
+    private String name;
+
+    public Triangulo(String nombre) {
+        this.name = nombre;
+    }
+
+    public String getNombre() {
+    return name;
+    }
     
     @Override
     public double figuraPerimetro() {

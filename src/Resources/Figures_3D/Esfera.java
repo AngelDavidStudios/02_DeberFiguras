@@ -4,6 +4,10 @@ import Resources.Figures_2D.Circulo;
 
 public class Esfera extends Circulo {
 
+    public Esfera(String nombre) {
+    super(nombre);
+    }
+
     public double superficiesfera() {
         double superficie;
 

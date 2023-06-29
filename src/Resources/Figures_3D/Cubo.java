@@ -4,6 +4,10 @@ import Resources.Figures_2D.Cuadrado;
 
 public class Cubo extends Cuadrado {
 
+    public Cubo(String nombre) {
+    super(nombre);
+    }
+
     public Boolean isCube() {
 
         if (l1 == l2 && l2 == l3 && l3 == l4) {
