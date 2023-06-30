@@ -1,17 +1,16 @@
-## Getting Started
+## Taller Semana 14
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Aplicacion sobre los temas de herencias, Polimorfismos en clases abstractas e interfaces.
 
 ## Folder Structure
 
 The workspace contains two folders by default, where:
 
 - `src`: the folder to maintain sources
+- `Resources`: Contenido de todas las figuras geometricas 3D 2D y las clases padre
 - `lib`: the folder to maintain dependencies
 
 Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
 ## Dependency Management
 
